@@ -5,8 +5,8 @@ const AudioPlayer = ({ onClick, play ,ChangeSong,song}) => {
   const progress = useRef(null);
   const [currentTime, setCurrentTime] = useState(0);
   const songs = [
-    "../assets/lost-in-city-lights-145038.mp3",
-    "../assets/forest-lullaby-110624.mp3"
+    "../../src/assets/lost-in-city-lights-145038.mp3",
+    "../../src/assets/forest-lullaby-110624.mp3"
   ];
 
   useEffect(() => {
