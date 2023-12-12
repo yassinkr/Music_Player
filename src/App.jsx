@@ -13,7 +13,7 @@ const App = () => {
     setPlay(!play);
   };
   return (
-    <div className=' flex justify-center align-middle items-center w-[100%] h-[100vh]' style={{backgroundImage:'url(./assets/bg.jpg)'}}>
+    <div className=' flex justify-center align-middle items-center w-[100%] h-[100vh]' id='backgr'>
       <Container onClick={handlePlay} play={play} ChangeSong={playNextSong} song={currentSong}/>
     </div>
   )

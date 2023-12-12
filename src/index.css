@@ -12,3 +12,17 @@ body {
   min-height: 100vh;
   
 }
+
+
+
+#backgr{
+background-image:url(./assets/bg.jpg);
+}
+
+#song1{
+  background-image:url(./assets/cover1.png);
+}
+#song2{
+  background-image:url(./assets/cover2.png);
+}
+
