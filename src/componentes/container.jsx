@@ -11,7 +11,7 @@ const Container = ({ onClick, play, song, ChangeSong }) => {
   if (song === 0) {
     bg = "../assets/cover1.png";
   } else if (song === 1) {
-    bg = "../assets/cover2.png";
+    bg = '../assets/cover2.png';
   }
   
   return (
