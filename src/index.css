@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter',sans-serif;
+  min-height: 100vh; /* Use min-height to ensure the body fills at least the viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+:root {
+  min-height: 100vh;
+  
+}
