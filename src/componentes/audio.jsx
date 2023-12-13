@@ -4,10 +4,18 @@ const AudioPlayer = ({ onClick, play ,ChangeSong,song}) => {
   const songRef = useRef(null);
   const progress = useRef(null);
   const [currentTime, setCurrentTime] = useState(0);
-  const songs = [
-    "./src/assets/lost-in-city-lights-145038.mp3",
-    "./src/assets/forest-lullaby-110624.mp3"
-  ];
+const songs = process.env.NODE_ENV === 'development'
+  ? [
+      "./src/assets/lost-in-city-lights-145038.mp3",
+      "./src/assets/forest-lullaby-110624.mp3"
+    ]
+  : [
+      "/assets/lost-in-city-lights-145038.mp3",
+      "/assets/forest-lullaby-110624.mp3"
+    ];
+
+
+
 
   useEffect(() => {
 
