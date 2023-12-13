@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Container from './componentes/container.jsx'
 const App = () => {
   const [currentSong, setCurrentSong] = useState(0);
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
   const playNextSong = () => {
     setCurrentSong((prevSong) => (prevSong + 1) % 2);
     

@@ -42,7 +42,7 @@ const songs = [song1, song2];
   };
 
   useEffect(() => {
-    console.log("Current song URL:", songs[song]);
+    
     if (play) {
       songRef.current.play();
     } else {
