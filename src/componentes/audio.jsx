@@ -1,16 +1,16 @@
 import React from "react";
+import song1 from "../assets/lost-in-city-lights-145038.mp3";
+import song2 from "../assets/forest-lullaby-110624.mp3";
+
 import { useState,useRef ,useEffect} from "react";
 const AudioPlayer = ({ onClick, play ,ChangeSong,song}) => {
   const songRef = useRef(null);
   const progress = useRef(null);
   const [currentTime, setCurrentTime] = useState(0);
-const songs = [
-  `${window.location.origin}/assets/lost-in-city-lights-145038.mp3`,
-  `${window.location.origin}/assets/forest-lullaby-110624.mp3`
-];
+const songs = [song1, song2];
 
 
-
+      
 
 
   useEffect(() => {
@@ -42,6 +42,7 @@ const songs = [
   };
 
   useEffect(() => {
+    console.log("Current song URL:", songs[song]);
     if (play) {
       songRef.current.play();
     } else {
